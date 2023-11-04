@@ -23,7 +23,7 @@ fetchIP();
 
 startBtn.addEventListener("click", async()=>{
     await navigator.geolocation.getCurrentPosition(sucess,faild)
-    // window.location.href="../main-page/main.html"
+    window.location.href="../main-page/main.html"
     
 })
 
@@ -37,7 +37,7 @@ function sucess(position){
     console.log(position);
     localStorage.setItem("lat", position.coords.latitude)
     localStorage.setItem("long", position.coords.longitude)
-    window.location.href="./main.html"
+    // window.location.href="./main.html"
    
 }
 
